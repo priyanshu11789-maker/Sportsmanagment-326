@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Athletes | LPU Sports Academy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <nav class="navbar">
+    <a href="index.html" class="logo">LPU <span>Sports</span> Academy</a>
+    <ul class="nav-links">
+      <li><a href="index.html" >Home</a></li>
+      <li><a href="athletes.html" class="active">Athletes</a></li>
+      <li><a href="coaches.html" >Coaches</a></li>
+      <li><a href="schedule.html" >Schedule</a></li>
+      <li><a href="attendance.html" >Attendance</a></li>
+      <li><a href="performance.html" >Performance</a></li>
+    </ul>
+  </nav>
+</header>
+<main class="section">
+  <h2 class="title">Register Athlete</h2>
+  <form id="athleteForm" class="form-box">
+    <label for="name">Name</label>
+    <input type="text" id="name" placeholder="Enter full name" required>
+
+    <label for="age">Age</label>
+    <input type="number" id="age" min="5" max="60" placeholder="Enter age" required>
+
+    <label for="gender">Gender</label>
+    <select id="gender" required>
+      <option value="">-- Select Gender --</option>
+      <option>Male</option><option>Female</option><option>Other</option>
+    </select>
+
+    <label for="sport">Sport</label>
+    <select id="sport" required></select>
+
+    <label for="batch">Batch</label>
+    <select id="batch" required>
+      <option value="">-- Select Batch --</option>
+      <option>Morning</option><option>Evening</option>
+    </select>
+
+    <button type="submit" class="btn">Add Athlete</button>
+  </form>
+
+  <h2 class="title">Registered Athletes</h2>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>#</th><th>Name</th><th>Age</th><th>Gender</th><th>Sport</th><th>Batch</th><th>Action</th></tr></thead>
+      <tbody id="athleteTable"></tbody>
+    </table>
+  </div>
+</main>
+<footer>
+  <p>&copy; 2026 LPU Sports Academy | CSE326 Internet Programming</p>
+  <p>Team Members: 51, 55, 69</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

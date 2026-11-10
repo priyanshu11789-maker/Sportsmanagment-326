@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Schedule | LPU Sports Academy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <nav class="navbar">
+    <a href="index.html" class="logo">LPU <span>Sports</span> Academy</a>
+    <ul class="nav-links">
+      <li><a href="index.html" >Home</a></li>
+      <li><a href="athletes.html" >Athletes</a></li>
+      <li><a href="coaches.html" >Coaches</a></li>
+      <li><a href="schedule.html" class="active">Schedule</a></li>
+      <li><a href="attendance.html" >Attendance</a></li>
+      <li><a href="performance.html" >Performance</a></li>
+    </ul>
+  </nav>
+</header>
+<main class="section">
+  <h2 class="title">Training Schedule</h2>
+  <div class="filter-bar">
+    <label for="scheduleFilter">Filter by Sport:</label>
+    <select id="scheduleFilter"></select>
+  </div>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Day</th><th>Sport</th><th>Coach</th><th>Batch Time</th><th>Ground</th></tr></thead>
+      <tbody id="scheduleTable"></tbody>
+    </table>
+  </div>
+</main>
+<footer>
+  <p>&copy; 2026 LPU Sports Academy | CSE326 Internet Programming</p>
+  <p>Team Members: 51, 55, 69</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

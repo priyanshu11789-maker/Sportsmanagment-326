@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Performance | LPU Sports Academy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <nav class="navbar">
+    <a href="index.html" class="logo">LPU <span>Sports</span> Academy</a>
+    <ul class="nav-links">
+      <li><a href="index.html" >Home</a></li>
+      <li><a href="athletes.html" >Athletes</a></li>
+      <li><a href="coaches.html" >Coaches</a></li>
+      <li><a href="schedule.html" >Schedule</a></li>
+      <li><a href="attendance.html" >Attendance</a></li>
+      <li><a href="performance.html" class="active">Performance</a></li>
+    </ul>
+  </nav>
+</header>
+<main class="section">
+  <h2 class="title">Progress Dashboard</h2>
+  <div class="grid stats">
+    <article class="card center"><h3>Total Athletes</h3><p class="big" id="dashAthletes">0</p></article>
+    <article class="card center"><h3>Total Coaches</h3><p class="big" id="dashCoaches">0</p></article>
+    <article class="card center"><h3>Average Score</h3><p class="big" id="dashAverage">0</p></article>
+  </div>
+
+  <h2 class="title">Enter Performance</h2>
+  <form id="performanceForm" class="form-box">
+    <label for="pName">Athlete Name</label>
+    <input type="text" id="pName" placeholder="Enter athlete name" required>
+
+    <label for="pSport">Sport</label>
+    <select id="pSport" required></select>
+
+    <label for="pScore">Score (out of 100)</label>
+    <input type="number" id="pScore" min="0" max="100" placeholder="0 - 100" required>
+
+    <button type="submit" class="btn">Add Score</button>
+  </form>
+
+  <h2 class="title">Performance Records</h2>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>#</th><th>Athlete</th><th>Sport</th><th>Score</th></tr></thead>
+      <tbody id="performanceTable"></tbody>
+      <tfoot><tr><td colspan="3">Average Score</td><td id="averageScore">0</td></tr></tfoot>
+    </table>
+  </div>
+</main>
+<footer>
+  <p>&copy; 2026 LPU Sports Academy | CSE326 Internet Programming</p>
+  <p>Team Members: 51, 55, 69</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
