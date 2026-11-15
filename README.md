@@ -30,7 +30,7 @@ Built as a college project for **Lovely Professional University (LPU)** using HT
       <br />
       <sub>@azadkumar121264-ai</sub>
       <br />
-      <sub>Frontend Developer</sub>
+      <sub>lead developer</sub>
     </td>
     <td align="center">
       <a href="https://github.com/priyanshu11789-maker">
