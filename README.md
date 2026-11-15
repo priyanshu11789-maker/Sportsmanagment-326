@@ -52,7 +52,7 @@ Built as a college project for **Lovely Professional University (LPU)** using HT
       <br />
       <sub>@sonamsandhu36-lang</sub>
       <br />
-      <sub>UI / Content Designer</sub>
+      <sub>Research</sub>
     </td>
   </tr>
 </table>
